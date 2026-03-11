@@ -47,6 +47,7 @@ python3 ./shellcode-generator_v1.py -arch mips -e little -cmd "id" -rp -12 -20
 
 
 
+
 # 声明
 
 **学术用途**：本工具旨在帮助安全研究员和学生理解 ARM/MIPS 架构下的内存破坏原理及规避坏字节的逻辑。
