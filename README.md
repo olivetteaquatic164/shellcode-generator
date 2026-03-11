@@ -24,20 +24,20 @@ sudo apt install qemu-user qemu-user-static qemu-system qemu-utils
 ![image-20260311221916490](./images/image-20260311221916490.png)
 
 ```
-python3 ./shellcode-generator_v1.py -arch mips -e little -cmd "echo 00" -xor -v
+./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "echo 00" -xor -v
 ```
 
 ![image-20260311222424696](./images/image-20260311222424696.png)
 
 ```
-python3 ./shellcode-generator_v1.py -arch mips -e little -cmd "echo 00" -short -v
+./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "echo 00" -short -v
 ```
 
 ![image-20260311222504507](./images/image-20260311222504507.png)
 
 ```
-python3 ./shellcode-generator_v1.py -arch arm -e little -cmd "echo 00" -xor -v
-python3 ./shellcode-generator_v1.py -arch mips -e little -cmd "id" -rp -12 -20 
+./shellcode-generator_v1_linux_amd64 -arch arm -e little -cmd "echo 00" -xor -v
+./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "id" -rp -12 -20 
 ```
 
 ![image-20260311222644507](./images/image-20260311222644507.png)
