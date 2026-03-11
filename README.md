@@ -1,6 +1,6 @@
 # shellcode-generator
 
-​												**[中文](https://github.com/Julian-iot/shellcode-generator/edit/main/README.md)[|English]()**
+​												**[中文](https://github.com/Julian-iot/shellcode-generator/blob/main/README.md)[|English]()**
 
 ​	ARM MIPS shellcode generator with no bad bytes
 
